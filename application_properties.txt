@@ -1,0 +1,54 @@
+server.port=9955
+
+#integrate DB
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jackson.serialization.FAIL_ON_EMPTY_BEANS=false
+
+
+
+
+# to store data on file
+#spring.datasource.url=jdbc:h2:file:/data/demo
+
+# accessing the h2 console
+spring.h2.console.enabled=true
+
+# adding path relative to the api server
+spring.h2.console.path=/h2-console
+# disabling tracing output
+spring.h2.console.settings.trace=false
+# disabling remote access.
+spring.h2.console.settings.web-allow-others=true
+
+# actuator config
+
+management.endpoints.web.base-path=/monitor
+management.endpoints.web.exposure.include=*
+
+
+management.info.env.enabled=true
+
+
+info.app.name=Spring Boot Rest APIs
+info.app.description=Springboot framework
+info.app.version=1.2.1
+
+info.release.title=Release Notes
+info.release.version=1.6
+info.release.reviewer=Vinod
+
+spring.batch.job.enabled=false
+app.batch.file.employee-data=classpath:employee.csv
+
+
+
+
+# spring security config
+
+spring.security.user.name=team9
+spring.security.user.password=team9
