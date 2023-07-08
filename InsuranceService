@@ -1,0 +1,8 @@
+package com.scb.personalBanking.service;
+
+import com.scb.personalBanking.entity.Insurance;
+
+public interface InsuranceService {
+
+	Insurance createInsurance(Insurance newInsurance);
+}
