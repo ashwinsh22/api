@@ -1,0 +1,61 @@
+personalbanking.java - Main Application starting point
+
+config
+------
+ApiErrorResponse
+ApiSuccessResponse
+AppInitializer
+OpenApiConfig
+SwaggerProps
+
+controller
+----------
+CustomerController
+CustomerLoginController
+HomeController
+InsuranceController
+StatementController
+TransferFundsController
+
+entity
+------
+AccountTransactions
+Customer
+Insurance
+Login
+Statement
+TransferFunds
+
+exception
+---------
+RecordNotCreatedException
+RecordNotFoundException
+RecordNotUpdatedException
+RecordNotDeletedException
+
+repository
+----------
+AccountTransactionsRepository
+CustomerRepository
+InsuranceRepository
+StatementRepository
+TransferFundsRepository
+
+security
+--------
+AppSecurityConfig
+
+service
+-------
+	Impl
+	----
+	CustomerLoginImpl
+	CustomerRegistrationImpl
+	InsuranceServiceImpl
+	StatementServiceImpl
+	TransferFundsServiceImpl
+CustomerLogin
+CustomerRegistration
+InsuranceService
+StatementService
+TransferFundsService
